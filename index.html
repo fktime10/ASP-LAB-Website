@@ -82,7 +82,7 @@
                         </div>
                      </div>
                      <div class="item">
-                        <img src="./images/misc5.JPG" class="carousel-image" alt="Research team collaboration">
+                        <img src="./images/misc2.jpg" class="carousel-image" alt="Research team collaboration">
                         <div class="carousel-caption">
                            <h3>Collaborative Research Environment</h3>
                            <p>Fostering innovation through teamwork</p>
@@ -200,7 +200,13 @@
       <script src="js/jquery-1.9.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script>
-         $('#main-carousel').carousel();
+// Initialize carousel with infinite scrolling support
+         $(document).ready(function() {
+         $('#main-carousel').carousel({
+                 interval: 5000,  // Auto-rotate every 5 seconds
+                 wrap: true       // Enable infinite scrolling/wrapping
+             });
+         });
          
          // Handle image loading failures by trying different case extensions
          $(document).ready(function() {
