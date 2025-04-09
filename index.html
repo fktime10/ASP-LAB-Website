@@ -200,43 +200,53 @@
       <script src="js/jquery-1.9.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script>
-// Initialize carousel with infinite scrolling support
+         // Initialize carousel with infinite scrolling support
          $(document).ready(function() {
-         $('#main-carousel').carousel({
+             $('#main-carousel').carousel({
                  interval: 5000,  // Auto-rotate every 5 seconds
                  wrap: true       // Enable infinite scrolling/wrapping
              });
-         });
-         
-         // Handle image loading failures by trying different case extensions
-         $(document).ready(function() {
+             
+             // Enhanced image loading error handler for case sensitivity issues
              $('img').on('error', function() {
                  var img = $(this);
                  var src = img.attr('src');
                  var originalSrc = src;
                  
-                 // Try lowercase extension
+                 console.log('Image failed to load: ' + src);
+                 
+                 // Try direct case-flipping for extensions
                  if (src.match(/\.JPG$/i)) {
-                     src = src.replace(/\.JPG$/i, '.jpg');
+                     if (src.endsWith('.JPG')) {
+                         src = src.replace(/\.JPG$/, '.jpg');
+                     } else {
+                         src = src.replace(/\.jpg$/, '.JPG');
+                     }
+                     console.log('Trying alternative extension: ' + src);
                      img.attr('src', src);
                  } 
-                 // Try uppercase extension
-                 else if (src.match(/\.jpg$/i)) {
-                     src = src.replace(/\.jpg$/i, '.JPG');
-                     img.attr('src', src);
-                 }
-                 // Try lowercase png
                  else if (src.match(/\.PNG$/i)) {
-                     src = src.replace(/\.PNG$/i, '.png');
-                     img.attr('src', src);
-                 }
-                 // Try uppercase png
-                 else if (src.match(/\.png$/i)) {
-                     src = src.replace(/\.png$/i, '.PNG');
+                     if (src.endsWith('.PNG')) {
+                         src = src.replace(/\.PNG$/, '.png');
+                     } else {
+                         src = src.replace(/\.png$/, '.PNG');
+                     }
+                     console.log('Trying alternative extension: ' + src);
                      img.attr('src', src);
                  }
                  
-                 console.log('Image error, trying alternative: ' + originalSrc + ' → ' + src);
+                 // Set a fallback image if all else fails
+                 img.on('error', function() {
+                     console.log('All image loading attempts failed');
+                     // Create a data URL for a minimalist placeholder image
+                     var fallbackSrc = 'data:image/svg+xml;charset=UTF-8,' + 
+                         encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">' +
+                         '<rect fill="#eee" width="300" height="200"/>' +
+                         '<text fill="#999" font-family="Arial" font-size="14" x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">' +
+                         'Image not available</text></svg>');
+                     img.attr('src', fallbackSrc);
+                     img.off('error'); // Prevent infinite loop
+                 });
              });
          });
       </script>
