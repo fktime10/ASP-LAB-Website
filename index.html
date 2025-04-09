@@ -199,6 +199,40 @@
       <!-- Scripts -->
       <script src="js/jquery-1.9.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script>$('#main-carousel').carousel();</script>
+      <script>
+         $('#main-carousel').carousel();
+         
+         // Handle image loading failures by trying different case extensions
+         $(document).ready(function() {
+             $('img').on('error', function() {
+                 var img = $(this);
+                 var src = img.attr('src');
+                 var originalSrc = src;
+                 
+                 // Try lowercase extension
+                 if (src.match(/\.JPG$/i)) {
+                     src = src.replace(/\.JPG$/i, '.jpg');
+                     img.attr('src', src);
+                 } 
+                 // Try uppercase extension
+                 else if (src.match(/\.jpg$/i)) {
+                     src = src.replace(/\.jpg$/i, '.JPG');
+                     img.attr('src', src);
+                 }
+                 // Try lowercase png
+                 else if (src.match(/\.PNG$/i)) {
+                     src = src.replace(/\.PNG$/i, '.png');
+                     img.attr('src', src);
+                 }
+                 // Try uppercase png
+                 else if (src.match(/\.png$/i)) {
+                     src = src.replace(/\.png$/i, '.PNG');
+                     img.attr('src', src);
+                 }
+                 
+                 console.log('Image error, trying alternative: ' + originalSrc + ' → ' + src);
+             });
+         });
+      </script>
    </body>
 </html>
