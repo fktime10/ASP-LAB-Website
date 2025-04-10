@@ -9,6 +9,7 @@
       <!-- Google Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Segoe+UI:wght@400;500;700&display=swap" rel="stylesheet">
       <!-- Styles -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -37,13 +38,64 @@
                margin-bottom: 20px;
             }
          }
+         
+         /* Enhanced title styling */
+         .jumbotron h1 {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 0.01em;
+            line-height: 1.2;
+         }
+         
+         /* Improved scroll behavior */
+         html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary-color) #f5f5f5;
+         }
+         
+         body {
+            scroll-padding-top: 70px;
+         }
+         
+         ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+         }
+         
+         ::-webkit-scrollbar-track {
+            background: #f5f5f5;
+         }
+         
+         ::-webkit-scrollbar-thumb {
+            background-color: var(--primary-color);
+            border-radius: 4px;
+         }
+         
+         .bs-docs-sidenav {
+            padding: 0;
+            background-color: var(--bg-secondary);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 3px 10px var(--shadow-color);
+            transition: top 0.1s ease-in-out;
+         }
+         
+         .nav-list > li > a {
+            margin: 0 0 -1px;
+            padding: 8px 14px;
+            border-left: 3px solid transparent;
+            transition: all 0.2s ease;
+         }
       </style>
    </head>
    <body>
       <div class="container">
          <header class="jumbotron subhead" id="overview">
             <p class="lead">Nazarbayev University</p>
-            <h1>Applications of Signal Processing Lab</h1>
+            <h1>Applications of Signal Processing Lab (ASP-LAB)</h1>
          </header>
          <div class="masthead">
             <div class="navbar">
@@ -67,255 +119,217 @@
          <div class="row-fluid">
             <div class="span3 bs-docs-sidebar" id="navparent">
                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
-                  <li><a href="#published">Journal Publications</a></li>
-                  <li><a class="subhead" href="#2024">2024</a></li>
-                  <li><a class="subhead" href="#2023">2023</a></li>
-                  <li><a class="subhead" href="#2022">2022</a></li>
-                  <li><a class="subhead" href="#2021">2021</a></li>
-                  <li><a class="subhead" href="#2020">2020</a></li>
-                  <li><a class="subhead" href="#2019">2019</a></li>
-                  <li><a class="subhead" href="#2018">2018</a></li>
-                  <li><a href="#inreview">In Review and Preparation</a></li>
-                  <li><a href="#refereed">Conference Proceedings</a></li>
-                  <li><a class="subhead" href="#2024c">2024</a></li>
-                  <li><a class="subhead" href="#2023c">2023</a></li>
-                  <li><a class="subhead" href="#2022c">2022</a></li>
-                  <li><a class="subhead" href="#2021c">2021</a></li>
-                  <li><a class="subhead" href="#2020c">2020</a></li>
-                  <li><a class="subhead" href="#2019c">2019</a></li>
-                  <li><a class="subhead" href="#2018c">2018</a></li>
-                  <li><a class="subhead" href="#2017c">2017</a></li>
+                  <li><a href="#2024">2024</a></li>
+                  <li><a href="#2023">2023</a></li>
+                  <li><a href="#2022">2022</a></li>
+                  <li><a href="#2021">2021</a></li>
+                  <li><a href="#2020">2020</a></li>
+                  <li><a href="#2019">2019</a></li>
+                  <li><a href="#2018">2018</a></li>
+                  <li><a href="#2017">2017</a></li>
+                  <li><a href="#inreview">In Preparation</a></li>
                </ul>
             </div>
             <div class="span8 offset1">
-               <section id="published">
+               <section id="2024">
                   <div class="page-header">
-                     <h2>Journal Publications</h2>
+                     <h2>2024</h2>
                   </div>
-                  <section id="2024">
-                     <h3>2024</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> F. Kozhamkulova and M. T. Akhtar, "A hybrid approach to enhanced signal denoising using data-driven multiresolution analysis with detrended-fluctuation-analysis-based thresholding and stationary wavelet transform," <span class="journal">Applied Sciences</span>, vol. 14, no. 23, 2024, issn: 2076-3417. <a href="https://www.mdpi.com/2076-3417/14/23/10866" class="pub-link">View Publication</a></p>
-                        </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> F. Kozhamkulova and M. T. Akhtar, "A hybrid approach to enhanced signal denoising using data-driven multiresolution analysis with detrended-fluctuation-analysis-based thresholding and stationary wavelet transform," <span class="journal">Applied Sciences</span>, vol. 14, no. 23, 2024, issn: 2076-3417. <a href="https://www.mdpi.com/2076-3417/14/23/10866" class="pub-link">View Publication</a></p>
                      </div>
-                  </section>
-                  <hr>
-                  <section id="2023">
-                     <h3>2023</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> S. Yergaliyev and M. T. Akhtar, "A Systematic Review on Distributed Arithmetic-based Hardware Implementation of Adaptive Digital Filters," <span class="journal">IEEE Access</span>, vol. 11, pp. 85165-85183, 2023. <a href="https://doi.org/10.3390/10.1109/ACCESS.2023.3304234" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> M. T. Akhtar, "Developing a New Filtered-x Recursive Least Squares Adaptive Algorithm Based on a Robust Objective Function for Impulsive Active Noise Control Systems," <span class="journal">Applied Sciences</span>, vol. 13, no. 4, article 2715, Feb. 2023. <a href="https://doi.org/10.3390/app13042715" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, F. Albu, and A. Nishihara, "Prediction Error Method (PEM)-Based Howling Cancellation in Hearing Aids: Can We Do Better?" <span class="journal">IEEE Access</span>, vol. 11, pp. 337-364, 2023. <a href="https://doi.org/10.1109/ACCESS.2022.3232334" class="pub-link">View Publication</a></p>
-                        </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Conference]</strong> M. T. Akhtar, "On Adaptive Feedback Active Noise Control Systems With Online Adaptation of Secondary Path Estimation Filter," in <span class="conference">Proc. IEEE MWSCAS 2024</span>, Aug. 11-14, 2024, Springfield, MA, USA, pp. 698-702.</p>
                      </div>
-                  </section>
-                  <hr>
-                  <section id="2022">
-                     <h3>2022</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> F. Iqbal, M. Tufail, S. Ahmed, and M. T. Akhtar, "A fractional Taylor series-based least mean square algorithm, and its Applications to power signal estimation," <span class="journal">Signal Processing</span>, vol. 193, article 108405, April 2022. <a href="https://doi.org/10.1016/j.sigpro.2021.108405" class="pub-link">View Publication</a></p>
-                        </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">3.</span> <strong>[Conference]</strong> B. Kurmangaliyev and M. T. Akhtar, "Weighted singular value thresholding and gradient optimization of Stein's unbiased risk estimate for rank estimation of nonnegative matrix factorization in automatic music transcription," in <span class="conference">Proc. 2024 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing (PACRIM'24)</span>, August 21-23, 2024, University of Victoria, Victoria, B.C., Canada.</p>
                      </div>
-                  </section>
-                  <hr>
-                  <section id="2021">
-                     <h3>2021</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Ensemble Voting-Based Multi-Channel EEG Classification in Subject-Independent P300 Speller," <span class="journal">Applied Sciences</span>, vol. 11, no. 23, article 11252, 2021. <a href="https://doi.org/10.3390/app112311252" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> R. Zhagypar, K. Zhagyparova, and M. T. Akhtar, "Spatially Smoothed TF-Root-MUSIC for DOA Estimation of Coherent and Non-stationary Sources under Noisy Conditions," <span class="journal">IEEE ACCESS</span>, vol. 9, pp. 95754–95766, 2021. <a href="https://doi.org/10.1109/ACCESS.2021.3095345" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, F. Albu, and A. Nishihara, "Maximum Versoria-criterion (MVC)-based adaptive filtering method for mitigating acoustic feedback in hearing-aid devices," <span class="journal">Applied Acoustics</span>, vol. 181, article 108156, Oct. 2021. <a href="https://doi.org/10.1016/j.apacoust.2021.108156" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">4.</span> M. T. Akhtar, "Narrowband feedback active noise control systems with secondary path modeling using gain-controlled additive random noise," <span class="journal">Digital Signal Processing</span>, vol. 111, article 102976, Apr. 2021. <a href="https://doi.org/10.1016/j.dsp.2021.102976" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">5.</span> Naveed, M. T. Akhtar, M. F. Siddiqui, and N. ur Rehman, "A statistical approach to signal denoising based on data-driven multiscale representation," <span class="journal">Digital Signal Processing</span>, vol. 108, article 102896, Jan. 2021. <a href="https://doi.org/10.1016/j.dsp.2020.102896" class="pub-link">View Publication</a></p>
-                        </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">4.</span> <strong>[Conference]</strong> M. T. Akhtar, "On developing a robust filtered-reference RLS algorithm and its Applications for ANC systems targeting impulsive noise sources," in <span class="conference">Proc. 2024 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing (PACRIM'24)</span>, August 21-23, 2024, University of Victoria, Victoria, B.C., Canada.</p>
                      </div>
-                  </section>
-                  <hr>
-                  <section id="2020">
-                     <h3>2020</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> M. T. Akhtar, "On active impulsive noise control (AINC) systems: Developing a filtered-reference adaptive algorithm using convex-combined normalized step-size approach," <span class="journal">Circuits, Systems, and Signal Processing</span>, vol. 39, no. 9, pp. 4354–4377, Sept. 2020. <a href="https://doi.org/10.1007/s00034-020-01368-z" class="pub-link">View Publication</a></p>
-                        </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">5.</span> <strong>[Conference]</strong> M. T. Akhtar, "Efficient adaptive feedback cancellation method for digital hearing aids employing short processing delays," in <span class="conference">Proc. the 22nd IEEE International NEWCAS Conference (IEEE NEWCASE 2024)</span>, 16-19 June 2024, Sherbrooke, Canada, pp. 368-372.</p>
                      </div>
-                  </section>
-                  <hr>
-                  <section id="2019">
-                     <h3>2019</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> M. T. Akhtar, "A time-varying normalized step-size based generalized fractional moment adaptive algorithm and its Applications to ANC of impulsive sources," <span class="journal">Applied Acoustics</span>, vol. 155, pp. 240-249, Dec. 2019. <a href="https://doi.org/10.1016/j.apacoust.2019.05.030" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> M. Tufail, S. Ahmed, M. Rehan, M. T. Akhtar, "A two adaptive filters-based method for reducing effects of acoustic feedback in single-channel feedforward ANC systems," <span class="journal">Digital Signal Processing</span>, vol. 90, pp. 18-27, Jul. 2019. <a href="https://doi.org/10.1016/j.dsp.2019.03.016" class="pub-link">View Publication</a></p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, F. Albu, and A. Nishihara, "Acoustic feedback cancellation in hearing aids using dual adaptive filtering and gain-controlled probe signal," <span class="journal">Biomedical Signal Processing & Control</span>, vol. 52, pp. 1-13, Jul. 2019. <a href="https://doi.org/10.1016/j.bspc.2019.03.012" class="pub-link">View Publication</a></p>
-                        </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">6.</span> <strong>[Conference]</strong> M. T. Akhtar, "Engaging Undergraduate Students in Signal Processing Research: Vision, Strategy, and A Success Story," in <span class="conference">Proc. 15th IEEE Global Engineering Education Conference 2024 (IEEE EDUCON 2024)</span>, 8-11 May 2024, Kos International Convention Centre, Kos, Greece.</p>
                      </div>
-                  </section>
-                  <hr>
-                  <section id="2018">
-                     <h3>2018</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> M. T. Akhtar, "An adaptive algorithm - based on modified tanh non-linearity and fractional processing - for impulsive active noise control systems," <span class="journal">Journal of Low Frequency Noise, Vibration and Active Control</span>, vol. 37, no. 3, pp. 495-508, Sept. 2018. <a href="https://doi.org/10.1177/1461348417725952" class="pub-link">View Publication</a></p>
-                        </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2023">
+                  <div class="page-header">
+                     <h2>2023</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> S. Yergaliyev and M. T. Akhtar, "A Systematic Review on Distributed Arithmetic-based Hardware Implementation of Adaptive Digital Filters," <span class="journal">IEEE Access</span>, vol. 11, pp. 85165-85183, 2023. <a href="https://doi.org/10.3390/10.1109/ACCESS.2023.3304234" class="pub-link">View Publication</a></p>
                      </div>
-                  </section>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Journal]</strong> M. T. Akhtar, "Developing a New Filtered-x Recursive Least Squares Adaptive Algorithm Based on a Robust Objective Function for Impulsive Active Noise Control Systems," <span class="journal">Applied Sciences</span>, vol. 13, no. 4, article 2715, Feb. 2023. <a href="https://doi.org/10.3390/app13042715" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">3.</span> <strong>[Journal]</strong> M. T. Akhtar, F. Albu, and A. Nishihara, "Prediction Error Method (PEM)-Based Howling Cancellation in Hearing Aids: Can We Do Better?" <span class="journal">IEEE Access</span>, vol. 11, pp. 337-364, 2023. <a href="https://doi.org/10.1109/ACCESS.2022.3232334" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">4.</span> <strong>[Conference]</strong> D. Zhakyp and M. T. Akhtar, "Employing Neighborhood Component Analysis (NCA) as a Feature Selection Method for Surface Electromyography (sEMG) Signal Classification," in <span class="conference">Proc. The 2023 24th International Conference Digital Signal Processing (24th DSP 2023)</span>, 11-13 June 2023, Island of Rhodes, Greece.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">5.</span> <strong>[Conference]</strong> Z. Ermaganbet, A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Subject-Independent P300 Speller Classification using Time-Frequency Representation and Double Input Convolutional Neural Network with Feature Concatenation," in <span class="conference">Proc. The 2023 24th International Conference Digital Signal Processing (24th DSP 2023)</span>, 11-13 June 2023, Island of Rhodes, Greece.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">6.</span> <strong>[Conference]</strong> O. Demirel and M. T. Akhtar, "Dual-Input Convolutional Neural Network (DiCNN) Employing Color Normalized and Nuclei Segmented Data for Histopathology Image Classification," in <span class="conference">Proc. The 22nd IEEE Statistical Signal Processing Workshop (IEEE SSP 2023)</span>, 2-5 July 2023, Hanoi, Vietnam, pp. 378-382.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">7.</span> <strong>[Conference]</strong> F. Kozhamkulova, P. K. Jamwal, and M. T. Akhtar, "Signal Denoising Technique Employing Detrended Fluctuation Thresholding and Stationary Wavelet Transform in the Framework of Data-Driven Multiresolution Analysis," in <span class="conference">Proc. IEEE ISCAS 2023</span>, May 21-25, 2023, Monterey, California, USA.</p>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2022">
+                  <div class="page-header">
+                     <h2>2022</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> F. Iqbal, M. Tufail, S. Ahmed, and M. T. Akhtar, "A fractional Taylor series-based least mean square algorithm, and its Applications to power signal estimation," <span class="journal">Signal Processing</span>, vol. 193, article 108405, April 2022. <a href="https://doi.org/10.1016/j.sigpro.2021.108405" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Conference]</strong> D. Ungarbayev, Osman Demirel, and M. T. Akhtar, "Interpretable Automatic Data Augmentation Method for Image Classification," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, November 7-10, 2022, Chiang Mai, Thailand, pp. 1353-1358.</p>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2021">
+                  <div class="page-header">
+                     <h2>2021</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Ensemble Voting-Based Multi-Channel EEG Classification in Subject-Independent P300 Speller," <span class="journal">Applied Sciences</span>, vol. 11, no. 23, article 11252, 2021. <a href="https://doi.org/10.3390/app112311252" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Journal]</strong> R. Zhagypar, K. Zhagyparova, and M. T. Akhtar, "Spatially Smoothed TF-Root-MUSIC for DOA Estimation of Coherent and Non-stationary Sources under Noisy Conditions," <span class="journal">IEEE ACCESS</span>, vol. 9, pp. 95754–95766, 2021. <a href="https://doi.org/10.1109/ACCESS.2021.3095345" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">3.</span> <strong>[Journal]</strong> M. T. Akhtar, F. Albu, and A. Nishihara, "Maximum Versoria-criterion (MVC)-based adaptive filtering method for mitigating acoustic feedback in hearing-aid devices," <span class="journal">Applied Acoustics</span>, vol. 181, article 108156, Oct. 2021. <a href="https://doi.org/10.1016/j.apacoust.2021.108156" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">4.</span> <strong>[Journal]</strong> M. T. Akhtar, "Narrowband feedback active noise control systems with secondary path modeling using gain-controlled additive random noise," <span class="journal">Digital Signal Processing</span>, vol. 111, article 102976, Apr. 2021. <a href="https://doi.org/10.1016/j.dsp.2021.102976" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">5.</span> <strong>[Journal]</strong> Naveed, M. T. Akhtar, M. F. Siddiqui, and N. ur Rehman, "A statistical approach to signal denoising based on data-driven multiscale representation," <span class="journal">Digital Signal Processing</span>, vol. 108, article 102896, Jan. 2021. <a href="https://doi.org/10.1016/j.dsp.2020.102896" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">6.</span> <strong>[Conference]</strong> A. Mussabayeva, Z. Ermaganbet, P. K. Jamwal, and M. T. Akhtar, "Event-related spectrogram representation of EEG for CNN-based P300 speller," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, Dec 14-17, 2021, Tokyo, Japan, pp. 410-415.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">7.</span> <strong>[Conference]</strong> T. Okhassov, P. K. Jamwal, and M. T. Akhtar, "Cost-effective proportionate affine projection algorithm with variable parameters for acoustic feedback cancellation," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, Dec 14-17, 2021, Tokyo, Japan, pp. 416-422.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">8.</span> <strong>[Conference]</strong> N. Saidnassim, B. Abdikenov, M. T. Akhtar, R. Kelesbekov, and P. K. Jamwal, "Self-supervised visual transformers for breast cancer diagnosis," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, Dec 14-17, 2021, Tokyo, Japan, pp. 423-427.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">9.</span> <strong>[Conference]</strong> A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Ensemble learning approach for subject-independent P300 speller," in <span class="conference">Proc. IEEE EMBC 2021</span>, Oct. 31 – Nov. 04, 2021, Guadalajara, Mexico, pp. 5900-5903.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">10.</span> <strong>[Conference]</strong> K. Zhagyparova, R. Zhagypar, A. Zollanvari, and M. T. Akhtar, "Supervised learning-based sound source distance estimation using multivariate features," in <span class="conference">Proc. 2021 IEEE Region 10 Symposium (TENSYMP 2021)</span>, 23-25 August, 2021, Grand Hyatt Jeju, Republic of Korea, pp. 332-336.</p>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2020">
+                  <div class="page-header">
+                     <h2>2020</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> M. T. Akhtar, "On active impulsive noise control (AINC) systems: Developing a filtered-reference adaptive algorithm using convex-combined normalized step-size approach," <span class="journal">Circuits, Systems, and Signal Processing</span>, vol. 39, no. 9, pp. 4354–4377, Sept. 2020. <a href="https://doi.org/10.1007/s00034-020-01368-z" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Conference]</strong> R. Zhagypar, K. Zhagyparova, and M. T. Akhtar, "Exploiting the rules of the TF-MUSIC and spatial smoothing to enhance the DOA estimation for coherent and non-stationary sources," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2020 (APSIPA ASC 2020)</span>, Dec 7-10, 2020, Auckland, New Zealand, pp. 236-241.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">3.</span> <strong>[Conference]</strong> A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Comparison of generic and subject-specific training for features classification in P300 speller," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2020 (APSIPA ASC 2020)</span>, Dec 7-10, 2020, Auckland, New Zealand, pp. 222-227.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">4.</span> <strong>[Conference]</strong> M. T. Akhtar, "Novel recursive least squares-based filtered-x adaptive algorithm developed for active control of impulsive noise sources," in <span class="conference">Proc. IEEE International Conference Systems, Man, and Cybernetics (IEEE SMC 2020)</span>, October 11-14, 2020, Toronto, Canada, pp. 2359-2364.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">5.</span> <strong>[Conference]</strong> M. T. Akhtar, M. V. S. Lima, and P. S. R. Diniz, "On adaptation of cancelation path modeling filter in single-channel feedback-type adaptive active noise control systems," in <span class="conference">Proc. IEEE MWSCAS 2020</span>, Aug. 09-12, 2020, Springfield, MA, USA, pp. 852-885.</p>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2019">
+                  <div class="page-header">
+                     <h2>2019</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> M. T. Akhtar, "A time-varying normalized step-size based generalized fractional moment adaptive algorithm and its Applications to ANC of impulsive sources," <span class="journal">Applied Acoustics</span>, vol. 155, pp. 240-249, Dec. 2019. <a href="https://doi.org/10.1016/j.apacoust.2019.05.030" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Journal]</strong> M. Tufail, S. Ahmed, M. Rehan, M. T. Akhtar, "A two adaptive filters-based method for reducing effects of acoustic feedback in single-channel feedforward ANC systems," <span class="journal">Digital Signal Processing</span>, vol. 90, pp. 18-27, Jul. 2019. <a href="https://doi.org/10.1016/j.dsp.2019.03.016" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">3.</span> <strong>[Journal]</strong> M. T. Akhtar, F. Albu, and A. Nishihara, "Acoustic feedback cancellation in hearing aids using dual adaptive filtering and gain-controlled probe signal," <span class="journal">Biomedical Signal Processing & Control</span>, vol. 52, pp. 1-13, Jul. 2019. <a href="https://doi.org/10.1016/j.bspc.2019.03.012" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">4.</span> <strong>[Conference]</strong> M. T. Akhtar, "Adaptive feedback active noise control (AFB-ANC) system equipped with online adaptation and convergence monitoring of the cancellation-path estimation (CPE) filter," in <span class="conference">Proc. IEEE GlobalSIP 2019</span>, Nov. 11-14, 2019, Ottawa, Ontario, Canada.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">5.</span> <strong>[Conference]</strong> M. T. Akhtar, "On reducing effect of acoustic feedback in hearing aids by employing lattice prediction and hybrid adaptive filtering," in <span class="conference">Proc. 10th IEEE Annual Information Technology, Electronics, Mobile Communication Conference (IEEE IEMCON 2019)</span>, Oct. 17-19, 2019, Vancouver, Canada, pp. 0878-0884. (Certificate of Best Presenter)</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">6.</span> <strong>[Conference]</strong> M. T. Akhtar, "A fully adaptive feedback ANC system employing online estimation of the cancellation path," in <span class="conference">Proc. IEEE MWSCAS 2019</span>, Aug. 04-07, 2019, Dallas, TX, USA, pp. 674-677.</p>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2018">
+                  <div class="page-header">
+                     <h2>2018</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Journal]</strong> M. T. Akhtar, "An adaptive algorithm - based on modified tanh non-linearity and fractional processing - for impulsive active noise control systems," <span class="journal">Journal of Low Frequency Noise, Vibration and Active Control</span>, vol. 37, no. 3, pp. 495-508, Sept. 2018. <a href="https://doi.org/10.1177/1461348417725952" class="pub-link">View Publication</a></p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Conference]</strong> M. T. Akhtar, and A. Nishihara, "Two-adaptive filter-based method using gain controlled probe noise for acoustic feedback neutralization in digital hearing aids," in <span class="conference">Proc. 16th International Workshop on Acoustic Signal Enhancement (IWAENC 2018)</span>, Sept. 17-20, 2018, Tokyo, Japan, pp. 176-180.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">3.</span> <strong>[Conference]</strong> M. T. Akhtar, "A convex-combined step-size-based normalized modified filtered-x least mean square algorithm for impulsive active noise control systems," in <span class="conference">Proc. EUSIPCO 2018</span>, Sept. 03-07, 2018, Rome, Italy, pp. 2468-2472.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">4.</span> <strong>[Conference]</strong> M. T. Akhtar, "A normalized filtered-x generalized fractional lower order moment adaptive algorithm for impulsive ANC systems," in <span class="conference">Proc. IEEE MWSCAS 2018</span>, Aug. 05-08, 2018, Windsor, ON, Canada, pp. 821-824.</p>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+               <section id="2017">
+                  <div class="page-header">
+                     <h2>2017</h2>
+                  </div>
+                  <div class="publication-list">
+                     <div class="publication-item">
+                        <p><span class="pub-number">1.</span> <strong>[Conference]</strong> A. K. Tahir, A. Fazal, M. Ali, and M. T. Akhtar, "On Implementation of Prediction Error Method-based Adaptive Feedback Cancellation (AFC) in Digital Hearing Aids," in <span class="conference">Proc. 2017 International Symposium Recent Advances Electrical Engineering (RAEE'17)</span>, Oct. 24-26, 2017, Islamabad, Pakistan.</p>
+                     </div>
+                     <div class="publication-item">
+                        <p><span class="pub-number">2.</span> <strong>[Conference]</strong> M. T. Akhtar, and A. Nishihara, "Lattice adaptive filtering-based method for acoustic feedback cancellation in hearing aids with robustness against sudden changes in the feedback path," in <span class="conference">Proc. The Eighth International Workshop Signal Design Applicationss Communications (IWSDA2017)</span>, Sept. 24-28, 2017, Sapporo, Japan, pp. 59-63.</p>
+                     </div>
+                  </div>
                </section>
                <hr>
                <section id="inreview">
                   <div class="page-header">
-                     <h2>In Review and Preparation</h2>
+                     <h2>In Preparation</h2>
                   </div>
                   <div class="publication-list">
                      <div class="publication-item">
-                        <p>O. Demirel and M. T. Akhtar, "Color Dependence Analysis of Dual-Input Type Convolutional Neural Networks Employing Color Normalized and Nuclei Segmented Data for Histopathology Image Classification," <span class="journal">IEEE Access</span>, vol. 11, pp. xxx-xx, 2024 (in preparation).</p>
+                        <p><strong>[Journal - In Preparation]</strong> O. Demirel and M. T. Akhtar, "Color Dependence Analysis of Dual-Input Type Convolutional Neural Networks Employing Color Normalized and Nuclei Segmented Data for Histopathology Image Classification," <span class="journal">IEEE Access</span>, vol. 11, pp. xxx-xx, 2024 (in preparation).</p>
                      </div>
                   </div>
-               </section>
-               <hr>
-               <section id="refereed">
-                  <div class="page-header">
-                     <h2>Papers and Presentations in Refereed Conference Proceedings</h2>
-                  </div>
-                  <section id="2024c">
-                     <h3>2024</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> M. T. Akhtar, "On Adaptive Feedback Active Noise Control Systems With Online Adaptation of Secondary Path Estimation Filter," in <span class="conference">Proc. IEEE MWSCAS 2024</span>, Aug. 11-14, 2024, Springfield, MA, USA, pp. 698-702.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> B. Kurmangaliyev and M. T. Akhtar, "Weighted singular value thresholding and gradient optimization of Stein's unbiased risk estimate for rank estimation of nonnegative matrix factorization in automatic music transcription," in <span class="conference">Proc. 2024 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing (PACRIM'24)</span>, August 21-23, 2024, University of Victoria, Victoria, B.C., Canada.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, "On developing a robust filtered-reference RLS algorithm and its Applications for ANC systems targeting impulsive noise sources," in <span class="conference">Proc. 2024 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing (PACRIM'24)</span>, August 21-23, 2024, University of Victoria, Victoria, B.C., Canada.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">4.</span> M. T. Akhtar, "Efficient adaptive feedback cancellation method for digital hearing aids employing short processing delays," in <span class="conference">Proc. the 22nd IEEE International NEWCAS Conference (IEEE NEWCASE 2024)</span>, 16-19 June 2024, Sherbrooke, Canada, pp. 368-372.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">5.</span> M. T. Akhtar, "Engaging Undergraduate Students in Signal Processing Research: Vision, Strategy, and A Success Story," in <span class="conference">Proc. 15th IEEE Global Engineering Education Conference 2024 (IEEE EDUCON 2024)</span>, 8-11 May 2024, Kos International Convention Centre, Kos, Greece.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2023c">
-                     <h3>2023</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> D. Zhakyp and M. T. Akhtar, "Employing Neighborhood Component Analysis (NCA) as a Feature Selection Method for Surface Electromyography (sEMG) Signal Classification," in <span class="conference">Proc. The 2023 24th International Conference Digital Signal Processing (24th DSP 2023)</span>, 11-13 June 2023, Island of Rhodes, Greece.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> Z. Ermaganbet, A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Subject-Independent P300 Speller Classification using Time-Frequency Representation and Double Input Convolutional Neural Network with Feature Concatenation," in <span class="conference">Proc. The 2023 24th International Conference Digital Signal Processing (24th DSP 2023)</span>, 11-13 June 2023, Island of Rhodes, Greece.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> O. Demirel and M. T. Akhtar, "Dual-Input Convolutional Neural Network (DiCNN) Employing Color Normalized and Nuclei Segmented Data for Histopathology Image Classification," in <span class="conference">Proc. The 22nd IEEE Statistical Signal Processing Workshop (IEEE SSP 2023)</span>, 2-5 July 2023, Hanoi, Vietnam, pp. 378-382.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">4.</span> F. Kozhamkulova, P. K. Jamwal, and M. T. Akhtar, "Signal Denoising Technique Employing Detrended Fluctuation Thresholding and Stationary Wavelet Transform in the Framework of Data-Driven Multiresolution Analysis," in <span class="conference">Proc. IEEE ISCAS 2023</span>, May 21-25, 2023, Monterey, California, USA.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2022c">
-                     <h3>2022</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> D. Ungarbayev, Osman Demirel, and M. T. Akhtar, "Interpretable Automatic Data Augmentation Method for Image Classification," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, November 7-10, 2022, Chiang Mai, Thailand, pp. 1353-1358.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2021c">
-                     <h3>2021</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> A. Mussabayeva, Z. Ermaganbet, P. K. Jamwal, and M. T. Akhtar, "Event-related spectrogram representation of EEG for CNN-based P300 speller," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, Dec 14-17, 2021, Tokyo, Japan, pp. 410-415.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> T. Okhassov, P. K. Jamwal, and M. T. Akhtar, "Cost-effective proportionate affine projection algorithm with variable parameters for acoustic feedback cancellation," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, Dec 14-17, 2021, Tokyo, Japan, pp. 416-422.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> N. Saidnassim, B. Abdikenov, M. T. Akhtar, R. Kelesbekov, and P. K. Jamwal, "Self-supervised visual transformers for breast cancer diagnosis," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2021(APSIPA ASC 2021)</span>, Dec 14-17, 2021, Tokyo, Japan, pp. 423-427.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">4.</span> A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Ensemble learning approach for subject-independent P300 speller," in <span class="conference">Proc. IEEE EMBC 2021</span>, Oct. 31 – Nov. 04, 2021, Guadalajara, Mexico, pp. 5900-5903.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">5.</span> K. Zhagyparova, R. Zhagypar, A. Zollanvari, and M. T. Akhtar, "Supervised learning-based sound source distance estimation using multivariate features," in <span class="conference">Proc. 2021 IEEE Region 10 Symposium (TENSYMP 2021)</span>, 23-25 August, 2021, Grand Hyatt Jeju, Republic of Korea, pp. 332-336.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2020c">
-                     <h3>2020</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> R. Zhagypar, K. Zhagyparova, and M. T. Akhtar, "Exploiting the rules of the TF-MUSIC and spatial smoothing to enhance the DOA estimation for coherent and non-stationary sources," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2020 (APSIPA ASC 2020)</span>, Dec 7-10, 2020, Auckland, New Zealand, pp. 236-241.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> A. Mussabayeva, P. K. Jamwal, and M. T. Akhtar, "Comparison of generic and subject-specific training for features classification in P300 speller," in <span class="conference">Proc. APSIPA Annual Summit and Conference 2020 (APSIPA ASC 2020)</span>, Dec 7-10, 2020, Auckland, New Zealand, pp. 222-227.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, "Novel recursive least squares-based filtered-x adaptive algorithm developed for active control of impulsive noise sources," in <span class="conference">Proc. IEEE International Conference Systems, Man, and Cybernetics (IEEE SMC 2020)</span>, October 11-14, 2020, Toronto, Canada, pp. 2359-2364.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">4.</span> M. T. Akhtar, M. V. S. Lima, and P. S. R. Diniz, "On adaptation of cancelation path modeling filter in single-channel feedback-type adaptive active noise control systems," in <span class="conference">Proc. IEEE MWSCAS 2020</span>, Aug. 09-12, 2020, Springfield, MA, USA, pp. 852-885.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2019c">
-                     <h3>2019</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> M. T. Akhtar, "Adaptive feedback active noise control (AFB-ANC) system equipped with online adaptation and convergence monitoring of the cancellation-path estimation (CPE) filter," in <span class="conference">Proc. IEEE GlobalSIP 2019</span>, Nov. 11-14, 2019, Ottawa, Ontario, Canada.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> M. T. Akhtar, "On reducing effect of acoustic feedback in hearing aids by employing lattice prediction and hybrid adaptive filtering," in <span class="conference">Proc. 10th IEEE Annual Information Technology, Electronics, Mobile Communication Conference (IEEE IEMCON 2019)</span>, Oct. 17-19, 2019, Vancouver, Canada, pp. 0878-0884. (Certificate of Best Presenter)</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, "A fully adaptive feedback ANC system employing online estimation of the cancellation path," in <span class="conference">Proc. IEEE MWSCAS 2019</span>, Aug. 04-07, 2019, Dallas, TX, USA, pp. 674-677.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2018c">
-                     <h3>2018</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> M. T. Akhtar, and A. Nishihara, "Two-adaptive filter-based method using gain controlled probe noise for acoustic feedback neutralization in digital hearing aids," in <span class="conference">Proc. 16th International Workshop on Acoustic Signal Enhancement (IWAENC 2018)</span>, Sept. 17-20, 2018, Tokyo, Japan, pp. 176-180.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> M. T. Akhtar, "A convex-combined step-size-based normalized modified filtered-x least mean square algorithm for impulsive active noise control systems," in <span class="conference">Proc. EUSIPCO 2018</span>, Sept. 03-07, 2018, Rome, Italy, pp. 2468-2472.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">3.</span> M. T. Akhtar, "A normalized filtered-x generalized fractional lower order moment adaptive algorithm for impulsive ANC systems," in <span class="conference">Proc. IEEE MWSCAS 2018</span>, Aug. 05-08, 2018, Windsor, ON, Canada, pp. 821-824.</p>
-                        </div>
-                     </div>
-                  </section>
-                  <section id="2017c">
-                     <h3>2017</h3>
-                     <div class="publication-list">
-                        <div class="publication-item">
-                           <p><span class="pub-number">1.</span> A. K. Tahir, A. Fazal, M. Ali, and M. T. Akhtar, "On Implementation of Prediction Error Method-based Adaptive Feedback Cancellation (AFC) in Digital Hearing Aids," in <span class="conference">Proc. 2017 International Symposium Recent Advances Electrical Engineering (RAEE'17)</span>, Oct. 24-26, 2017, Islamabad, Pakistan.</p>
-                        </div>
-                        <div class="publication-item">
-                           <p><span class="pub-number">2.</span> M. T. Akhtar, and A. Nishihara, "Lattice adaptive filtering-based method for acoustic feedback cancellation in hearing aids with robustness against sudden changes in the feedback path," in <span class="conference">Proc. The Eighth International Workshop Signal Design Applicationss Communications (IWSDA2017)</span>, Sept. 24-28, 2017, Sapporo, Japan, pp. 59-63.</p>
-                        </div>
-                     </div>
-                  </section>
                </section>
             </div>
          </div>
